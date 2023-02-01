@@ -83,6 +83,9 @@ h1 {
   color: #06068f;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
 }
+.boxes__subtitle {
+  color: #06068f;
+}
 
 /*-----ESTILOS FAQ-----*/
 #faq__section {
@@ -96,3 +99,58 @@ h1 {
   color: #fff;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
 }
+
+/*-----ESTILOS NOSOTROS-----*/
+#nosotros {
+  min-height: 100vh;
+  background-image: url(../images/medball.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.coaches {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "coach1-ph coach1-text coach1-text"
+    "coach2-text coach2-text coach2-ph"
+    "coach3-ph coach3-text coach3-text";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  padding: 5rem;
+}
+
+.coach1-ph {
+  grid-area: coach1-ph;
+}
+.coach1-text {
+  grid-area: coach1-text;
+}
+.coach2-ph {
+  grid-area: coach2-ph;
+}
+.coach2-text {
+  grid-area: coach2-text;
+}
+.coach3-ph {
+  grid-area: coach3-ph;
+}
+.coach3-text {
+  grid-area: coach3-text;
+}
+
+.coach-img {
+  max-height: 50vh;
+  border-radius: 5%;
+}
+.coach-text {
+  justify-items: center;
+  padding: 0 5.2rem;
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
+}
+
+/*-----ESTILOS CONTACTO-----*/
