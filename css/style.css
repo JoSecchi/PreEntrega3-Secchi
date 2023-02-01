@@ -1,0 +1,98 @@
+/*  color: #ef850b NARANJA
+    color: #06068f AZUL*/
+
+* {
+  font-family: "Passion One", cursive;
+}
+
+/*-----ESTILOS NAV-----*/
+
+.nav-link {
+  color: #fff;
+}
+
+.navbar-brand {
+  color: #ef850b;
+}
+
+/*-----ESTILOS FOOTER-----*/
+
+.footer__link {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/*-----ESTILOS INDEX-----*/
+
+.intro-section {
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  color: white;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.intro-section__text {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
+}
+
+.color-overlay {
+  position: absolute;
+  flex-direction: column;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.more-info {
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  color: white;
+}
+
+.more-info-box {
+  max-width: 20rem;
+  min-height: 20rem;
+  background-color: #ef850b;
+}
+
+.color-overlay-light {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.more-info__title {
+  color: #06068f;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
+}
+
+/*-----ESTILOS SERVICIOS-----*/
+.boxes {
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+}
+
+.boxes__title {
+  color: #06068f;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
+}
+
+/*-----ESTILOS FAQ-----*/
+#faq__section {
+  background-image: url(../images/deadlift.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+}
+
+.faq__container {
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
+}
