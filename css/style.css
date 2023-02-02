@@ -15,6 +15,11 @@
   color: #ef850b;
 }
 
+.navbar-toggler {
+  color: #fff;
+  background-color: #ef850b;
+  margin-right: 3rem;
+}
 /*-----ESTILOS FOOTER-----*/
 
 .footer__link {
