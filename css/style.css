@@ -15,6 +15,11 @@
   color: #ef850b;
 }
 
+.nav__title {
+  font-size: 1.5rem;
+  max-width: 140px;
+}
+
 .navbar-toggler {
   color: #fff;
   background-color: #ef850b;
@@ -27,16 +32,21 @@
   color: #fff;
 }
 
+.footer-text {
+  font-size: 1.1rem;
+}
+
 /*-----ESTILOS INDEX-----*/
 
-.intro-section {
+#intro-section {
+  background-image: url(../images/cuerdaColor.jpg);
   background-size: cover;
   min-height: 100vh;
   position: relative;
   color: white;
 }
 
-h1 {
+.intro-section__title {
   font-size: 4rem;
 }
 
@@ -134,22 +144,34 @@ h1 {
   background-repeat: no-repeat;
 }
 
+/*----- ANIMACIONES IMG ------*/
+
 .coaches {
-  min-width: 100vw;
+  min-width: 100%;
   min-height: 100vh;
   display: grid;
   grid-template-areas:
-    "coach1-ph coach1-text coach1-text"
-    "coach2-text coach2-text coach2-ph"
-    "coach3-ph coach3-text coach3-text";
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+    "coaches-title"
+    "coach1-ph"
+    "coach1-text"
+    "coach2-ph"
+    "coach2-text"
+    "coach3-ph"
+    "coach3-text";
+  grid-template-rows: 5rem 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   align-items: center;
   justify-items: center;
-  padding: 5rem;
+  padding: 5rem 0;
 }
 
-/*----- ANIMACIONES IMG ------*/
+.coaches__title {
+  grid-area: coaches-title;
+  font-size: 2.5rem;
+  color: #06068f;
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.39);
+  padding-bottom: 2.5rem;
+}
 
 .coach1-ph {
   grid-area: coach1-ph;
@@ -280,6 +302,33 @@ h1 {
   padding: 0 5.2rem;
   color: #fff;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
+}
+
+@media screen and (min-width: 768px) {
+  .nav__title {
+    font-size: 3.5rem;
+  }
+  .coaches {
+    min-width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+      "coaches-title coaches-title coaches-title"
+      "coach1-ph coach1-text coach1-text"
+      "coach2-text coach2-text coach2-ph"
+      "coach3-ph coach3-text coach3-text";
+    grid-template-rows: 5rem 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 5rem 0;
+  }
+  .coaches__title {
+    font-size: 5rem;
+  }
+  .footer-text {
+    font-size: 2rem;
+  }
 }
 
 /*-----ESTILOS CONTACTO-----*/
