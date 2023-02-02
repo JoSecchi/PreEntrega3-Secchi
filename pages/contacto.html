@@ -25,6 +25,11 @@
       src="https://kit.fontawesome.com/5c2c9bbc7a.js"
       crossorigin="anonymous"
     ></script>
+    <!--ANIMATE-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <header>
@@ -77,7 +82,94 @@
         </div>
       </nav>
     </header>
-    <section id="contacto"></section>
+    <section id="contacto">
+      <div class="contacto__title">Nos interesa tu opinión</div>
+      <div class="contacto__form">
+        <form action="">
+          <fieldset>
+            <legend>Dejanos tus dudas</legend>
+            <div class="form__items">
+              <label for="nombre">Nombre completo:</label>
+              <input
+                type="text"
+                name="nombre"
+                id="nombre"
+                placeholder="Ingresa tu nombre y apellido"
+              />
+            </div>
+            <div class="form__items">
+              <label for="correo">Correo electronico</label>
+              <input
+                type="email"
+                name="correo"
+                id="correo"
+                placeholder="Ingresa tu e-mail"
+              />
+            </div>
+            <div class="form__items">
+              <label for="edad">Edad</label>
+              <input
+                type="number"
+                name="edad"
+                id="edad"
+                min="18"
+                max="90"
+                placeholder="18"
+              />
+            </div>
+            <div class="form__items">
+              <input
+                type="checkbox"
+                name="clase"
+                id="clase"
+                value="1"
+                checked
+              />
+              <label class="checkbox__text" for="checkbox"
+                >Quiero realizar una clase de prueba</label
+              >
+            </div>
+            <div class="form__items">
+              <label for="sexo">Sexo</label>
+              <select name="sexo" id="sexo">
+                <option value="M">Masculino</option>
+                <option value="F">Femenino</option>
+                <option value="N">No me identifico</option>
+              </select>
+            </div>
+            <div class="form__fecha-localidad">
+              <div class="form__items">
+                <label for="fecha"></label>
+                <input type="date" name="fecha" id="fecha" />
+              </div>
+              <div class="form__items">
+                <label for="localidad">Localidad</label>
+                <select name="localidad" id="localidad">
+                  <option value="Mon">Montevideo</option>
+                  <option value="Can">Canelones</option>
+                  <option value="Mal">Maldonado</option>
+                  <option value="Roc">Rocha</option>
+                  <option value="Otro">Otro</option>
+                </select>
+              </div>
+            </div>
+            <div class="form__items">
+              <label for="mensaje"></label>
+              <textarea
+                name="mensaje"
+                id="mensaje"
+                cols="35"
+                rows="15"
+                placeholder="Dejanos tu comentario..."
+              ></textarea>
+            </div>
+            <div class="form__button">
+              <input type="submit" value="Enviar" />
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </section>
     <footer>
       <div id="footer">
         <div class="container-fluid p-0">

@@ -73,17 +73,38 @@ h1 {
 }
 
 /*-----ESTILOS SERVICIOS-----*/
-.boxes {
+#services {
+  background-image: url(../images/cuerdaBnW.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   min-height: 100vh;
-  position: relative;
 }
 
-.boxes__title {
+.services__boxes {
+  min-height: 20rem;
+  background-color: #ef850b;
+}
+
+.services__title {
   color: #06068f;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
 }
-.boxes__subtitle {
+.services__subtitle {
+  color: #06068f;
+}
+
+.services__button {
+  background-color: #06068f;
+  padding: 0.2rem 1rem;
+  border-radius: 0.25rem;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  color: #fff;
+}
+
+.services__button:hover,
+.services__button:focus {
+  background-color: #fff;
   color: #06068f;
 }
 
@@ -123,29 +144,132 @@ h1 {
   padding: 5rem;
 }
 
+/*----- ANIMACIONES IMG ------*/
+
 .coach1-ph {
   grid-area: coach1-ph;
+  color: white;
+  background-image: url(../images/equipo1.jpg);
+  background-size: cover;
+  padding: 10rem 0 0;
+  max-width: 280px;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 500ms ease;
 }
+
+.coach1-ph:hover {
+  transform: scale(1.05);
+}
+
+@media (hover) {
+  .coach-content {
+    transform: translateY(65%);
+    transition: transform 500ms ease;
+  }
+  .coach1-ph:hover .coach-content {
+    transform: translateY(0);
+    transition-delay: 500ms;
+    background-color: rgba(0, 0, 0, 0.248);
+  }
+}
+
+.coach-content {
+  padding: 0 1.5rem 0.5rem 1.5rem;
+}
+
+.coach-content__title {
+  color: #000;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
+}
+
+.coach-content__body {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
+}
+
+.button {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 0.2rem 1rem;
+  border-radius: 0.25rem;
+  transition: all 0.5s ease;
+}
+
+.button:hover,
+.button:focus {
+  background-color: white;
+  color: black;
+}
+
 .coach1-text {
   grid-area: coach1-text;
 }
 .coach2-ph {
   grid-area: coach2-ph;
+  color: white;
+  background-image: url(../images/equipo2.jpg);
+  background-size: cover;
+  padding: 10rem 0 0;
+  max-width: 280px;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 500ms ease;
 }
+
+.coach2-ph:hover {
+  transform: scale(1.05);
+}
+
+@media (hover) {
+  .coach-content {
+    transform: translateY(65%);
+    transition: transform 500ms ease;
+  }
+  .coach2-ph:hover .coach-content {
+    transform: translateY(0);
+    transition-delay: 500ms;
+    background-color: rgba(0, 0, 0, 0.248);
+  }
+}
+
 .coach2-text {
   grid-area: coach2-text;
 }
 .coach3-ph {
   grid-area: coach3-ph;
+  color: white;
+  background-image: url(../images/equipo3.jpg);
+  background-size: cover;
+  padding: 10rem 0 0;
+  max-width: 280px;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 500ms ease;
 }
+
+.coach3-ph:hover {
+  transform: scale(1.05);
+}
+
+@media (hover) {
+  .coach-content {
+    transform: translateY(65%);
+    transition: transform 500ms ease;
+  }
+  .coach3-ph:hover .coach-content {
+    transform: translateY(0);
+    transition-delay: 500ms;
+    background-color: rgba(0, 0, 0, 0.248);
+  }
+}
+
 .coach3-text {
   grid-area: coach3-text;
 }
 
-.coach-img {
-  max-height: 50vh;
-  border-radius: 5%;
-}
 .coach-text {
   justify-items: center;
   padding: 0 5.2rem;
@@ -154,3 +278,70 @@ h1 {
 }
 
 /*-----ESTILOS CONTACTO-----*/
+#contacto {
+  min-width: 100vw;
+  background-image: url(../images/bike.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4rem;
+}
+
+.contacto__title {
+  display: flex;
+  padding: 2rem 0;
+  font-size: 3rem;
+  color: #06068f;
+}
+
+legend {
+  font-size: 2rem;
+  padding: 0.5rem 0.2rem;
+  margin-left: 2rem;
+}
+
+.form__items {
+  display: flex;
+  padding: 0.5rem 2rem;
+  font-size: 1.5rem;
+  color: #06068f;
+}
+
+fieldset {
+  background-color: #fff;
+  border: 2px solid black;
+  padding: 0 2rem;
+}
+
+.form__items label {
+  padding-right: 0.4rem;
+}
+
+.form__items .checkbox__text {
+  padding: 0 0.4rem;
+}
+
+.form__fecha-localidad {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__fecha-localidad .form__items {
+  width: 50%;
+}
+
+.form__button {
+  display: flex;
+  padding: 2rem 0;
+  justify-content: flex-end;
+}
+
+.form__button input {
+  background-color: #ef850b;
+  color: #000;
+  border-radius: 10%;
+  padding: 0.5rem;
+}
