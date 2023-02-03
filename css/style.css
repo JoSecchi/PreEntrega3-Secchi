@@ -41,16 +41,18 @@
 #intro-section {
   background-image: url(../images/cuerdaColor.jpg);
   background-size: cover;
-  min-height: 100vh;
+  min-height: 50vh;
   position: relative;
   color: white;
+  min-width: 100vw;
 }
 
 .intro-section__title {
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 
 .intro-section__text {
+  font-size: 1rem;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
 }
 
@@ -62,6 +64,37 @@
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+@media screen and (min-width: 768px) {
+  #intro-section {
+    background-image: url(../images/cuerdaColor.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    color: white;
+    width: 50vw;
+  }
+
+  .intro-section__content {
+    width: 50%;
+  }
+
+  .intro-section__title {
+    font-size: 4rem;
+  }
+
+  .intro-section__text {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
+  }
+
+  .color-overlay {
+    position: absolute;
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
 .more-info {
   background-size: cover;
   min-height: 100vh;
@@ -70,8 +103,8 @@
 }
 
 .more-info-box {
-  max-width: 20rem;
-  min-height: 20rem;
+  min-width: 20rem;
+  max-height: 20rem;
   background-color: #ef850b;
 }
 
@@ -83,8 +116,37 @@
 }
 
 .more-info__title {
+  font-size: 2.5rem;
   color: #06068f;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
+}
+
+@media screen and (min-width: 768px) {
+  .more-info {
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    color: white;
+  }
+
+  .more-info-box {
+    max-width: 20rem;
+    min-height: 20rem;
+    background-color: #ef850b;
+  }
+
+  .color-overlay-light {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .more-info__title {
+    font-size: 4rem;
+    color: #06068f;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
+  }
 }
 
 /*-----ESTILOS SERVICIOS-----*/
@@ -306,7 +368,7 @@
 
 @media screen and (min-width: 768px) {
   .nav__title {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
   .coaches {
     min-width: 100%;
