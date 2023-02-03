@@ -71,7 +71,7 @@
     min-height: 100vh;
     position: relative;
     color: white;
-    width: 50vw;
+    width: auto;
   }
 
   .intro-section__content {
@@ -158,16 +158,25 @@
 }
 
 .services__boxes {
-  min-height: 20rem;
+  max-height: 20rem;
+  max-width: 18rem;
   background-color: #ef850b;
 }
 
 .services__title {
+  font-size: 2.5rem;
   color: #06068f;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
 }
 .services__subtitle {
   color: #06068f;
+}
+
+@media screen and (min-width: 768px) {
+  .services__boxes {
+    min-height: 20rem;
+    background-color: #ef850b;
+  }
 }
 
 .services__button {
@@ -194,10 +203,15 @@
 }
 
 .faq__container {
-  color: #fff;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.39);
 }
 
+@media screen and (min-width: 768px) {
+  .row-top {
+    flex-direction: row-reverse;
+  }
+}
 /*-----ESTILOS NOSOTROS-----*/
 #nosotros {
   min-height: 100vh;
@@ -407,23 +421,10 @@
 }
 
 .contacto__title {
-  display: flex;
-  padding: 2rem 0;
-  font-size: 3rem;
-  color: #06068f;
-}
-
-legend {
+  margin: 2rem 0;
   font-size: 2rem;
-  padding: 0.5rem 0.2rem;
-  margin-left: 2rem;
-}
-
-.form__items {
-  display: flex;
-  padding: 0.5rem 2rem;
-  font-size: 1.5rem;
   color: #06068f;
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.39);
 }
 
 fieldset {
@@ -432,21 +433,8 @@ fieldset {
   padding: 0 2rem;
 }
 
-.form__items label {
-  padding-right: 0.4rem;
-}
-
-.form__items .checkbox__text {
-  padding: 0 0.4rem;
-}
-
-.form__fecha-localidad {
-  display: flex;
-  justify-content: space-between;
-}
-
-.form__fecha-localidad .form__items {
-  width: 50%;
+.form__items {
+  padding-bottom: 0.5rem;
 }
 
 .form__button {
@@ -460,4 +448,67 @@ fieldset {
   color: #000;
   border-radius: 10%;
   padding: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .contacto__title {
+    display: flex;
+    padding: 2rem 0;
+    font-size: 3rem;
+    color: #06068f;
+  }
+
+  legend {
+    font-size: 2rem;
+    padding: 0.5rem 0.2rem;
+    margin-left: 2rem;
+  }
+
+  .contacto__title {
+    margin: 2rem 0;
+    font-size: 3.5rem;
+    color: #06068f;
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.39);
+  }
+
+  .form__items {
+    display: flex;
+    padding: 0.5rem 2rem;
+    font-size: 1.5rem;
+    color: #06068f;
+  }
+
+  :placeholder-shown {
+    font-size: 1rem;
+  }
+
+  .form__items label {
+    padding-right: 0.4rem;
+  }
+
+  .form__items .checkbox__text {
+    padding: 0 0.4rem;
+  }
+
+  .form__fecha-localidad {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__fecha-localidad .form__items {
+    width: 50%;
+  }
+
+  .form__button {
+    display: flex;
+    padding: 2rem 0;
+    justify-content: flex-end;
+  }
+
+  .form__button input {
+    background-color: #ef850b;
+    color: #000;
+    border-radius: 10%;
+    padding: 0.5rem;
+  }
 }
