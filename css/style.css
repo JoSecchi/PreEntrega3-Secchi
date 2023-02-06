@@ -2,10 +2,17 @@
     color: #06068f AZUL*/
 
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Passion One", cursive;
 }
 
 /*-----ESTILOS NAV-----*/
+
+.navbar {
+  background-color: #06068f;
+}
 
 .nav-link {
   color: #fff;
@@ -27,6 +34,10 @@
 }
 /*-----ESTILOS FOOTER-----*/
 
+.footer__copyright {
+  background-color: #ef850b;
+}
+
 .footer__link {
   font-size: 1.5rem;
   color: #fff;
@@ -34,6 +45,10 @@
 
 .footer-text {
   font-size: 1.1rem;
+}
+
+.footer__sm {
+  background-color: #06068f;
 }
 
 /*-----ESTILOS INDEX-----*/
@@ -63,39 +78,8 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 }
-
-@media screen and (min-width: 768px) {
-  #intro-section {
-    background-image: url(../images/cuerdaColor.jpg);
-    background-size: cover;
-    min-height: 100vh;
-    position: relative;
-    color: white;
-    width: auto;
-  }
-
-  .intro-section__content {
-    width: 50%;
-  }
-
-  .intro-section__title {
-    font-size: 4rem;
-  }
-
-  .intro-section__text {
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
-  }
-
-  .color-overlay {
-    position: absolute;
-    flex-direction: column;
-    width: 100vw;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-  }
-}
-
 .more-info {
+  background-image: url(../images/BoxJump.jpg);
   background-size: cover;
   min-height: 100vh;
   position: relative;
@@ -121,34 +105,6 @@
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
 }
 
-@media screen and (min-width: 768px) {
-  .more-info {
-    background-size: cover;
-    min-height: 100vh;
-    position: relative;
-    color: white;
-  }
-
-  .more-info-box {
-    max-width: 20rem;
-    min-height: 20rem;
-    background-color: #ef850b;
-  }
-
-  .color-overlay-light {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-
-  .more-info__title {
-    font-size: 4rem;
-    color: #06068f;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
-  }
-}
-
 /*-----ESTILOS SERVICIOS-----*/
 #services {
   background-image: url(../images/cuerdaBnW.jpg);
@@ -172,28 +128,6 @@
   color: #06068f;
 }
 
-@media screen and (min-width: 768px) {
-  .services__boxes {
-    min-height: 20rem;
-    background-color: #ef850b;
-  }
-}
-
-.services__button {
-  background-color: #06068f;
-  padding: 0.2rem 1rem;
-  border-radius: 0.25rem;
-  transition: all 0.5s ease;
-  text-decoration: none;
-  color: #fff;
-}
-
-.services__button:hover,
-.services__button:focus {
-  background-color: #fff;
-  color: #06068f;
-}
-
 /*-----ESTILOS FAQ-----*/
 #faq__section {
   background-image: url(../images/deadlift.jpg);
@@ -207,11 +141,6 @@
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.39);
 }
 
-@media screen and (min-width: 768px) {
-  .row-top {
-    flex-direction: row-reverse;
-  }
-}
 /*-----ESTILOS NOSOTROS-----*/
 #nosotros {
   min-height: 100vh;
@@ -380,33 +309,6 @@
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
 }
 
-@media screen and (min-width: 768px) {
-  .nav__title {
-    font-size: 4rem;
-  }
-  .coaches {
-    min-width: 100%;
-    min-height: 100vh;
-    display: grid;
-    grid-template-areas:
-      "coaches-title coaches-title coaches-title"
-      "coach1-ph coach1-text coach1-text"
-      "coach2-text coach2-text coach2-ph"
-      "coach3-ph coach3-text coach3-text";
-    grid-template-rows: 5rem 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-    padding: 5rem 0;
-  }
-  .coaches__title {
-    font-size: 5rem;
-  }
-  .footer-text {
-    font-size: 2rem;
-  }
-}
-
 /*-----ESTILOS CONTACTO-----*/
 #contacto {
   min-width: 100vw;
@@ -451,6 +353,117 @@ fieldset {
 }
 
 @media screen and (min-width: 768px) {
+  /*MQ INDEX*/
+
+  #intro-section {
+    background-image: url(../images/cuerdaColor.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    color: white;
+    width: auto;
+  }
+
+  .intro-section__content {
+    width: 50%;
+  }
+
+  .intro-section__title {
+    font-size: 4rem;
+  }
+
+  .intro-section__text {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
+  }
+
+  .color-overlay {
+    position: absolute;
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .more-info {
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    color: white;
+  }
+
+  .more-info-box {
+    max-width: 20rem;
+    min-height: 20rem;
+    background-color: #ef850b;
+  }
+
+  .color-overlay-light {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .more-info__title {
+    font-size: 4rem;
+    color: #06068f;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
+  }
+
+  /*MQ SERVICIOS*/
+
+  .services__boxes {
+    min-height: 20rem;
+    background-color: #ef850b;
+  }
+
+  .services__button {
+    background-color: #06068f;
+    padding: 0.2rem 1rem;
+    border-radius: 0.25rem;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .services__button:hover,
+  .services__button:focus {
+    background-color: #fff;
+    color: #06068f;
+  }
+
+  /*MQ NOSOTROS*/
+
+  .row-top {
+    flex-direction: row-reverse;
+  }
+
+  .nav__title {
+    font-size: 4rem;
+  }
+  .coaches {
+    min-width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+      "coaches-title coaches-title coaches-title"
+      "coach1-ph coach1-text coach1-text"
+      "coach2-text coach2-text coach2-ph"
+      "coach3-ph coach3-text coach3-text";
+    grid-template-rows: 5rem 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 5rem 0;
+  }
+  .coaches__title {
+    font-size: 5rem;
+  }
+  .footer-text {
+    font-size: 2rem;
+  }
+
+  /*MQ CONTACTO*/
   .contacto__title {
     display: flex;
     padding: 2rem 0;
