@@ -1,0 +1,41 @@
+/*ESTILOS CONTACTO*/
+#contacto {
+  min-width: 100vw;
+  background-image: url(../images/bike.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4rem;
+  h1.contacto__title {
+    margin: 2rem 0;
+    font-size: 2rem;
+    color: #06068f;
+    text-shadow: $text-shadow-white;
+  }
+  .contacto__form {
+    form {
+      fieldset {
+        background-color: #fff;
+        border: 2px solid black;
+        padding: 0 2rem;
+        .form__items {
+          padding-bottom: 0.5rem;
+        }
+        .form__button {
+          display: flex;
+          padding: 2rem 0;
+          justify-content: flex-end;
+          input {
+            background-color: #ef850b;
+            color: #000;
+            border-radius: 10%;
+            padding: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}

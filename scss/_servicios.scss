@@ -1,0 +1,36 @@
+/*ESTILOS SERVICIOS*/
+#services {
+  background-image: url(../images/cuerdaBnW.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  .container-fluid {
+    .row {
+      .col {
+        h1.services__title {
+          font-size: 2.5rem;
+          color: $color-azul;
+          text-shadow: $text-shadow-black;
+        }
+      }
+    }
+    .row {
+      .services__boxes {
+        max-height: 20rem;
+        max-width: 18rem;
+        background-color: $color-naranja;
+        h2.services__subtitle {
+          color: $color-azul;
+        }
+        .services__button {
+          background-color: #06068f;
+          padding: 0.2rem 1rem;
+          border-radius: 0.25rem;
+          transition: all 0.5s ease;
+          text-decoration: none;
+          color: $color-blanco;
+        }
+      }
+    }
+  }
+}

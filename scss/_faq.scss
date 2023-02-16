@@ -1,0 +1,24 @@
+/*ESTILOS FAQ*/
+#faq__section {
+  background-image: url(../images/deadlift.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  .container-fluid {
+    .row {
+      h1.faq__title {
+        color: $color-azul;
+        text-shadow: $text-shadow-white;
+      }
+    }
+    .row {
+      div.faq__container {
+        color: rgb(0, 0, 0);
+        text-shadow: $text-shadow-white;
+        .faq__subtitle {
+          color: $color-azul;
+        }
+      }
+    }
+  }
+}

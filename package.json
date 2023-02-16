@@ -1,0 +1,20 @@
+{
+  "name": "preentrega2---secchi---copia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoSecchi/PreEntrega2-Secchi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoSecchi/PreEntrega2-Secchi/issues"
+  },
+  "homepage": "https://github.com/JoSecchi/PreEntrega2-Secchi#readme"
+}

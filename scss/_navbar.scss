@@ -1,0 +1,27 @@
+/*ESTILOS DEL NAV*/
+.navbar {
+  background-color: $color-azul;
+  .container-fluid {
+    .navbar-brand {
+      color: $color-naranja;
+      .nav__title {
+        font-size: 1.5rem;
+        max-width: 140px;
+      }
+    }
+    button.navbar-toggler {
+      color: $color-blanco;
+      background-color: $color-naranja;
+      margin-right: 3rem;
+    }
+    div {
+      ul {
+        li {
+          a.nav-link {
+            color: $color-blanco;
+          }
+        }
+      }
+    }
+  }
+}

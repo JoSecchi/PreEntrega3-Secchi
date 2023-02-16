@@ -1,0 +1,98 @@
+/*ESTILOS NOSOTROS*/
+#nosotros {
+  min-height: 100vh;
+  background-image: url(../images/medball.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  .coaches {
+    min-width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+      "coaches-title"
+      "coach1-ph"
+      "coach1-text"
+      "coach2-ph"
+      "coach2-text"
+      "coach3-ph"
+      "coach3-text";
+    grid-template-rows: 5rem 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 5rem 0;
+    .coaches__title {
+      grid-area: coaches-title;
+      h1 {
+        font-size: 2.5rem;
+        color: $color-azul;
+        text-shadow: $text-shadow-white;
+        padding-bottom: 2.5rem;
+      }
+    }
+    .coach1-ph {
+      grid-area: coach1-ph;
+      color: $color-blanco;
+      background-image: url(../images/equipo1.jpg);
+      background-size: cover;
+      padding: 10rem 0 0;
+      max-width: 280px;
+      border-radius: 1rem;
+      overflow: hidden;
+      transition: transform 500ms ease;
+      &:hover {
+        transform: scale(1.05);
+      }
+      .coach-content {
+        padding: 0 1.5rem 0.5rem 1.5rem;
+        .coach-content__title {
+          color: $color-negro;
+          text-shadow: $text-shadow-black;
+        }
+        .coach-content__body {
+          text-shadow: $text-shadow-black;
+        }
+        .button {
+          cursor: pointer;
+          display: inline-block;
+          text-decoration: none;
+          color: $color-blanco;
+          background-color: $color-negro;
+          padding: 0.2rem 1rem;
+          border-radius: 0.25rem;
+          transition: all 0.5s ease;
+          &:hover,
+          .button:focus {
+            background-color: $color-blanco;
+            color: black;
+          }
+        }
+      }
+    }
+    .coach1-text {
+      grid-area: coach1-text;
+    }
+    .coach-text {
+      justify-items: center;
+      padding: 0 5.2rem;
+      color: $color-blanco;
+      text-shadow: $text-shadow-black;
+    }
+    .coach2-ph {
+      @extend .coach1-ph;
+      grid-area: coach2-ph;
+      background-image: url(../images/equipo2.jpg);
+    }
+    .coach2-text {
+      grid-area: coach2-text;
+    }
+    .coach3-ph {
+      @extend .coach1-ph;
+      grid-area: coach3-ph;
+      background-image: url(../images/equipo3.jpg);
+    }
+    .coach3-text {
+      grid-area: coach3-text;
+    }
+  }
+}
