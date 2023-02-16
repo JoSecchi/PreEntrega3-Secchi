@@ -65,7 +65,8 @@
 #intro-section {
   background-image: url(../images/cuerdaColor.jpg);
   background-size: cover;
-  min-width: 100vw;
+  background-repeat: no-repeat;
+  background-position: center;
   min-height: 50vh;
   position: relative;
   color: #fff;
@@ -252,7 +253,6 @@
 
 /*ESTILOS CONTACTO*/
 #contacto {
-  min-width: 100vw;
   background-image: url(../images/bike.jpg);
   background-size: cover;
   background-repeat: no-repeat;

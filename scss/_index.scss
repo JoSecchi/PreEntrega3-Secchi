@@ -1,62 +1,62 @@
 /*ESTILOS INDEX*/
 #intro-section {
-    background-image: url(../images/cuerdaColor.jpg);
+  background-image: url(../images/cuerdaColor.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 50vh;
+  position: relative;
+  color: $color-blanco;
+  .container-fluid {
+    .row {
+      .color-overlay {
+        position: absolute;
+        flex-direction: column;
+        width: 100vw;
+        height: 100%;
+        background-color: rgba($color: rgb(0, 0, 0), $alpha: 0.2);
+        div {
+          h1.intro-section__title {
+            font-size: 2.5rem;
+            text-shadow: $text-shadow-black;
+          }
+          p.intro-section__text {
+            font-size: 1rem;
+            text-shadow: $text-shadow-black;
+          }
+        }
+      }
+    }
+  }
+}
+#section-more-info {
+  .more-info {
+    background-image: url(../images/BoxJump.jpg);
     background-size: cover;
-  
-    min-width: 100vw;
-    min-height: 50vh;
+    min-height: 100vh;
     position: relative;
     color: $color-blanco;
-    .container-fluid {
+    .color-overlay-light {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.2);
       .row {
-        .color-overlay {
-          position: absolute;
-          flex-direction: column;
-          width: 100vw;
-          height: 100%;
-          background-color: rgba($color: rgb(0, 0, 0), $alpha: 0.2);
-          div {
-            h1.intro-section__title {
-              font-size: 2.5rem;
-              text-shadow: $text-shadow-black;
-            }
-            p.intro-section__text {
-              font-size: 1rem;
-              text-shadow: $text-shadow-black;
-            }
+        .col {
+          h2.more-info__title {
+            font-size: 2.5rem;
+            color: $color-azul;
+            text-shadow: $text-shadow-black;
           }
+        }
+      }
+      .row {
+        .more-info-box {
+          min-width: 20rem;
+          min-height: 20rem;
+          background-color: $color-naranja;
         }
       }
     }
   }
-  #section-more-info {
-    .more-info {
-      background-image: url(../images/BoxJump.jpg);
-      background-size: cover;
-      min-height: 100vh;
-      position: relative;
-      color: $color-blanco;
-      .color-overlay-light {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(255, 255, 255, 0.2);
-        .row {
-          .col {
-            h2.more-info__title {
-              font-size: 2.5rem;
-              color: $color-azul;
-              text-shadow: $text-shadow-black;
-            }
-          }
-        }
-        .row {
-          .more-info-box {
-            min-width: 20rem;
-            min-height: 20rem;
-            background-color: $color-naranja;
-          }
-        }
-      }
-    }
-  }
+}
