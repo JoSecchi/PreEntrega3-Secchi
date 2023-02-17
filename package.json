@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JoSecchi/PreEntrega2-Secchi.git"
+    "url": "git+https://github.com/JoSecchi/PreEntrega3-Secchi.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JoSecchi/PreEntrega2-Secchi/issues"
+    "url": "https://github.com/JoSecchi/PreEntrega3-Secchi/issues"
   },
-  "homepage": "https://github.com/JoSecchi/PreEntrega2-Secchi#readme"
+  "homepage": "https://github.com/JoSecchi/PreEntrega3-Secchi#readme"
 }

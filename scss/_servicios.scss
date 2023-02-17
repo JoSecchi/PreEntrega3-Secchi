@@ -21,6 +21,8 @@
         background-color: $color-naranja;
         h2.services__subtitle {
           color: $color-azul;
+          display: flex;
+          text-align: center;
         }
         .services__button {
           background-color: #06068f;

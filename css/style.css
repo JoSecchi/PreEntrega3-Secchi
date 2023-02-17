@@ -130,6 +130,8 @@
 }
 #services .container-fluid .row .services__boxes h2.services__subtitle {
   color: #06068f;
+  display: flex;
+  text-align: center;
 }
 #services .container-fluid .row .services__boxes .services__button {
   background-color: #06068f;
@@ -288,7 +290,7 @@
   padding: 0.5rem;
 }
 
-/*MEDIA QUERIES 768px*/
+/*MEDIA QUERIES 768px*/ /*VARIABLES*/
 @media screen and (min-width: 768px) {
   /*MQ NAV*/
   .navbar .container-fluid .navbar-brand .nav__title {
@@ -347,11 +349,14 @@
     background-color: #ef850b;
   }
   /*MQ SERVICIOS*/
-  .services__boxes {
+  #services .container-fluid .row .col h1.services__title {
+    font-size: 4rem;
+  }
+  #services .container-fluid .row .services__boxes {
     min-height: 20rem;
     background-color: #ef850b;
   }
-  .services__boxes .services__button {
+  #services .container-fluid .row .services__boxes .services__button {
     background-color: #06068f;
     padding: 0.2rem 1rem;
     border-radius: 0.25rem;
@@ -359,8 +364,8 @@
     text-decoration: none;
     color: #fff;
   }
-  .services__boxes .services__button:hover,
-  .services__boxes .services__button .services__button:focus {
+  #services .container-fluid .row .services__boxes .services__button:hover,
+  #services .container-fluid .row .services__boxes .services__button .services__button:focus {
     background-color: #fff;
     color: #06068f;
   }

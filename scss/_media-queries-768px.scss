@@ -1,5 +1,5 @@
 /*MEDIA QUERIES 768px*/
-
+@import "variables";
 @media screen and (min-width: 768px) {
   /*MQ NAV*/
   .navbar {
@@ -82,23 +82,37 @@
     }
   }
   /*MQ SERVICIOS*/
-  .services__boxes {
-    min-height: 20rem;
-    background-color: $color-naranja;
-    .services__button {
-      background-color: $color-azul;
-      padding: 0.2rem 1rem;
-      border-radius: 0.25rem;
-      transition: all 0.5s ease;
-      text-decoration: none;
-      color: $color-blanco;
-      &:hover,
-      .services__button:focus {
-        background-color: $color-blanco;
-        color: $color-azul;
+  #services {
+    .container-fluid {
+      .row {
+        .col {
+          h1.services__title {
+            font-size: 4rem;
+          }
+        }
+      }
+      .row {
+        .services__boxes {
+          min-height: 20rem;
+          background-color: $color-naranja;
+          .services__button {
+            background-color: $color-azul;
+            padding: 0.2rem 1rem;
+            border-radius: 0.25rem;
+            transition: all 0.5s ease;
+            text-decoration: none;
+            color: $color-blanco;
+            &:hover,
+            .services__button:focus {
+              background-color: $color-blanco;
+              color: $color-azul;
+            }
+          }
+        }
       }
     }
   }
+
   /*MQ NOSOTROS*/
   #nosotros {
     .coaches {
