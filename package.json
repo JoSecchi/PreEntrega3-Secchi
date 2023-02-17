@@ -1,7 +1,7 @@
 {
-  "name": "preentrega2---secchi---copia",
+  "name": "preentrega3---secchi",
   "version": "1.0.0",
-  "description": "",
+  "description": "Programas de entrenamiento adaptados a todos los niveles, tanto individuales como grupales",
   "main": "index.js",
   "scripts": {
     "compile": "sass --watch scss:css"
@@ -10,8 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/JoSecchi/PreEntrega3-Secchi.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "entrenamiento",
+    "nutrición",
+    "fisioterapia",
+    "fitness"
+  ],
+  "author": "José Secchi",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/JoSecchi/PreEntrega3-Secchi/issues"
