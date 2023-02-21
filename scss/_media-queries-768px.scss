@@ -64,7 +64,7 @@
         background-color: rgba(255, 255, 255, 0.2);
         .row {
           .col {
-            .more-info__title {
+            h2.more-info__title {
               font-size: 4rem;
               color: $color-azul;
               text-shadow: $text-shadow-black;
@@ -132,6 +132,12 @@
       .coaches__title {
         h1 {
           font-size: 4.2rem;
+        }
+      }
+      .coach-text {
+        span {
+          font-size: 1.2rem;
+          text-shadow: $text-shadow-black;
         }
       }
     }

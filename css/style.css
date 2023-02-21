@@ -106,9 +106,12 @@
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
 }
 #section-more-info .more-info .color-overlay-light .row .more-info-box {
-  min-width: 20rem;
-  min-height: 20rem;
+  min-width: 16rem;
+  min-height: 9rem;
   background-color: #ef850b;
+}
+#section-more-info .more-info .color-overlay-light .row .more-info-box h3 {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
 }
 
 /*ESTILOS SERVICIOS*/
@@ -338,7 +341,7 @@
     height: 100%;
     background-color: rgba(255, 255, 255, 0.2);
   }
-  #section-more-info .more-info .color-overlay-light .row .col .more-info__title {
+  #section-more-info .more-info .color-overlay-light .row .col h2.more-info__title {
     font-size: 4rem;
     color: #06068f;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
@@ -383,6 +386,10 @@
   }
   #nosotros .coaches .coaches__title h1 {
     font-size: 4.2rem;
+  }
+  #nosotros .coaches .coach-text span {
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
   }
   /*MQ FAQ*/
   /*MQ CONTACTO*/
