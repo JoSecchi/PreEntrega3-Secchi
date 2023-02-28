@@ -33,11 +33,10 @@
   .more-info {
     background-image: url(../images/BoxJump.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     min-height: 100vh;
-    position: relative;
     color: $color-blanco;
     .color-overlay-light {
-      position: absolute;
       width: 100%;
       height: 100%;
       background-color: rgba(255, 255, 255, 0.2);
